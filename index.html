@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+        <link rel="stylesheet" href="css/vazir.css">
+        <title>پنل مدیریت</title>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse p-0">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">پنل مدیریت</a>
+                <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-2 active">
+                            <a href="index.html" class="nav-link">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="posts.html" class="nav-link">پستها</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="categories.html" class="nav-link">دسته ها</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="users.html" class="nav-link">اعضا</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a href="profile.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i> امین شهنانی
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="profile.html" class="dropdown-item">
+                                    <i class="fa fa-user-circle"></i> پروفایل
+                                </a>
+                                <a href="settings.html" class="dropdown-item">
+                                    <i class="fa fa-gear"></i> تنظیمات
+                                </a>
+                            </div>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li class="nav-item mr0-5">
+                            <a href="login.html" class="nav-link">
+                                <i class="fa fa-user-times"></i> خروج
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <header class="bg-primary text-white py-1" id="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>
+                            <i class="fa fa-gear"></i> پنل مدیریت
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- ACTION SECTION-->
+        <section class="bg-faded py-4 mb-4" id="actions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <a href="#" class="btn btn-primary btn-block" data-target="#addPostModal" data-toggle="modal">
+                            <i class="fa fa-plus"></i> ایجاد پست جدید
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addCategoryModal">
+                            <i class="fa fa-plus"></i> ایجاد دسته جدید
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addUserModal">
+                            <i class="fa fa-plus"></i> ایجاد کاربر جدید
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- SECTION POST -->
+        <section id="id">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <div class="card card-primary text-white text-center mb-2">
+                                <div class="card-block">
+                                    <h4>پستها</h4>
+                                    <h5>
+                                        6 <i class="fa fa-pencil"></i> 
+                                    </h5>
+                                    <a href="posts.html" class="btn btn-outline-secondary btn-sm text-white">مشاهده</a>
+                                </div>
+                            </div>
+
+                            <div class="card card-success text-white text-center mb-2">
+                                <div class="card-block">
+                                    <h4>دسته ها</h4>
+                                    <h5>
+                                        3 <i class="fa fa-folder-open-o"></i> 
+                                    </h5>
+                                    <a href="categories.html" class="btn btn-outline-secondary text-white text-center">مشاهده</a>
+                                </div>
+                            </div>
+
+                            <div class="card card-warning text-center text-white mb-2">
+                                <div class="card-block">
+                                    <h4>کاربران</h4>
+                                    <h5>
+                                        2 <i class="fa fa-users"></i> 
+                                    </h5>
+                                    <a href="users.html" class="btn btn-outline-secondary text-white">مشاهده</a>
+                                </div>
+                            </div>
+
+                        </div>
+    
+                        <div class="col-md-9">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>آخرین پستها</h4>
+                                </div>
+                                <table class="table table-striped">
+                                    <thead class="thead thead-inverse">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>عنوان</th>
+                                            <th>دسته بندی</th>
+                                            <th>تاریخ ارسال</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>پست شماره یک</td>
+                                            <td>فناوری</td>
+                                            <td>1397/05/10</td>
+                                            <td>
+                                                <a href="details.html" class="btn btn-secondary">
+                                                    جزییات بیشتر <i class="fa fa-angle-double-left"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>پست شماره دو</td>
+                                            <td>کامپیوتر</td>
+                                            <td>1397/05/11</td>
+                                            <td>
+                                                <a href="details.html" class="btn btn-secondary">
+                                                    جزییات بیشتر <i class="fa fa-angle-double-left"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>پست شماره سه</td>
+                                            <td>بهداشت و سلامت</td>
+                                            <td>1397/05/12</td>
+                                            <td>
+                                                <a href="details.html" class="btn btn-secondary">
+                                                    جزییات بیشتر <i class="fa fa-angle-double-left"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>پست شماره چهار</td>
+                                            <td>کامپیوتر</td>
+                                            <td>1397/05/13</td>
+                                            <td>
+                                                <a href="details.html" class="btn btn-secondary">
+                                                    جزییات بیشتر <i class="fa fa-angle-double-left"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="bg-inverse text-white p-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="lead text-center">
+                                Copyright &copy; 2018 Control Panel
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        <!-- ADD POST MODAL-->
+        <div class="modal fade" id="addPostModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="title-modal" id="addPostModalLabel">
+                            ایجاد پست جدید
+                        </h5>
+                        <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="title" class="form-control-label">عنوان</label>
+                                <input type="text" class="form-control vazir-font">
+                            </div>
+                            <div class="form-group">
+                                <label for="category" class="form-control-label">انتخاب دسته</label>
+                                <select name="" id="" class="form-control vazir-font">
+                                    <option value="">فناوری</option>
+                                    <option value="">کامپیوتر</option>
+                                    <option value="">بهداشت و سلامت</option>
+                                </select>
+                            </div>
+                            <div class="form-group bg-faded">
+                                <label for="upload" class="form-control-label">اضافه کردن تصویر</label>
+                                <input type="file" id="file" class="form-control-file">
+                                <small class="form-text text-muted" id="filehelp">
+                                    حداکثر حجم تصویر باید 3 مگابایت باشد.
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <label for="content" class="form-control-label">متن</label>
+                                <textarea name="editor" type="text" class="form-control vazir-font"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary vazir-font ml-3" data-dismiss="modal">بستن</button>
+                        <button class="btn btn-primary vazir-font" data-dismiss="modal">ایجاد پست</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ADD CATEGORY SECTION -->
+        <div class="modal fade" id="addCategoryModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-success text-white">
+                        <h5 class="title-modal" id="addCategoryModalLabel">اضافه کردن دسته جدید</h5>
+                        <botton class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </botton>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="name" class="form-control-label">نام دسته</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary vazir-font ml-3" data-dismiss="modal">بستن</button>
+                        <button class="btn btn-success vazir-font" data-dismiss="modal">ایجاد دسته جدید</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION USER MODAL -->
+        <div class="modal fade" id="addUserModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-warning ">
+                        <h5 class="title-modal text-white">اضافه کردن کاربر جدید</h5>
+                        <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="$">
+                            <div class="form-group">
+                                <label for="name" class="form-control-label">نام</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-contol-label">پست الکترونیکی</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="form-control-label">کلمه عبور</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password" class="form-control-label">تکرار کلمه عبور</label>
+                                <input type="password" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary vazir-font ml-3" data-dismiss="modal" >بستن</button>
+                        <button class="btn btn-warning vazir-font" data-dismiss="modal">ایجاد کاربر جدید</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/feather.min.js"></script>
+        <script src="js/ckeditor/ckeditor.js"></script>
+
+        <script>
+          CKEDITOR.replace('editor')
+	    </script>
+
+     
+    </body>
+</html>

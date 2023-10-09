@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+        <link rel="stylesheet" href="css/vazir.css">
+        <title>مدیریت پستها</title>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse p-0">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">پنل مدیریت</a>
+                <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-2">
+                            <a href="index.html" class="nav-link">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="posts.html" class="nav-link">پستها</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="categories.html" class="nav-link">دسته ها</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="users.html" class="nav-link">اعضا</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a href="profile.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i> امین شهنانی
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="profile.html" class="dropdown-item">
+                                    <i class="fa fa-user-circle"></i> پروفایل
+                                </a>
+                                <a href="settings.html" class="dropdown-item">
+                                    <i class="fa fa-gear"></i> تنظیمات
+                                </a>
+                            </div>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li class="nav-item mr0-5">
+                            <a href="login.html" class="nav-link">
+                                <i class="fa fa-user-times"></i> خروج
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <header class="bg-primary text-white py-1" id="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>
+                            <i class="fa fa-user"></i> کاربر
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- ACTION SECTION-->
+        <section class="bg-faded py-4 mb-4" id="details-actions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="index.html" class="btn btn-secondary btn-block">
+                            <i class="fa fa-arrow-right"></i> بازگشت به صفحه اصلی
+                        </a>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <a href="index.html" class="btn btn-success btn-block" data-toggle="modal" data-target="#passwordModal">
+                            <i class="fa fa-lock"></i> تغییر کلمه عبور
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="index.html" class="btn btn-danger btn-block">
+                                <i class="fa fa-remove"></i> حذف کاربر
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- POST EDIT -->
+        <section id="edit-post">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="header-tittle vazir-font">آواتار</h4>
+                            </div>
+                            <div class="card-block">
+                                <img src="img/avatar.png" alt="" class="d-block img-fluid mb-2">
+                                <button class="btn btn-primary btn-block">ویرایش تصویر</button>
+                                <button class="btn btn-danger btn-block">حذف تصویر</button>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>
+                                    <i class="fa fa-user"></i> پروفایل
+                                </h4>
+                            </div>
+                            <div class="card-block">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label for="name" class="form-control-label">نام</label>
+                                        <input type="text" class="form-control vazir-font" value="امین">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="family" class="form-control-label">نام خانوادگی</label>
+                                        <input type="text" class="form-control vazir-font" value="شهنانی">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="form-control-label">پست الکترونیکی</label>
+                                        <input type="email" class="form-control vazir-font" value="am.shahnani@gmail.com">
+                                    </div>
+                                    <div class="form-group bg-faded">
+                                        <label for="upload" class="form-control-label">اضافه کردن تصویر</label>
+                                        <input type="file" id="file" class="form-control-file">
+                                        <small class="form-text text-muted" id="filehelp">
+                                            حداکثر حجم تصویر باید 3 مگابایت باشد.
+                                        </small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="content" class="form-control-label">بایو</label>
+                                        <textarea name="editor" type="text" class="form-control vazir-font">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatum necessitatibus id minus eius quae non odit iste harum minima laboriosam delectus velit est obcaecati aliquid sit sapiente, recusandae corrupti alias. Magni fugiat dolor eligendi eveniet dolores vitae eos eum, quam unde ducimus sint velit nesciunt et quaerat minus. Alias.
+                                        </textarea>
+                                    </div>
+                                </form>                            
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-inverse text-white p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center">
+                            Copyright &copy; 2018 Control Panel
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- SECTION PROFILE MODAL -->
+        <div class="modal fade" id="passwordModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-warning ">
+                        <h5 class="title-modal text-white">تغییر کلمه عبور</h5>
+                        <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="$">
+                            <div class="form-group">
+                                <label for="email" class="form-contol-label">پست الکترونیکی</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="form-control-label">کلمه عبور</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password" class="form-control-label">تکرار کلمه عبور</label>
+                                <input type="password" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary vazir-font ml-3" data-dismiss="modal" >بستن</button>
+                        <button class="btn btn-warning vazir-font" data-dismiss="modal">ذخیره تغییرات</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/feather.min.js"></script>
+        <script src="js/ckeditor/ckeditor.js"></script>
+
+        <script>
+          CKEDITOR.replace('editor')
+	    </script>
+    </body>
+</html>

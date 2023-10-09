@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+        <link rel="stylesheet" href="css/vazir.css">
+        <title>مدیریت پستها</title>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse p-0">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">مدیریت کاربران</a>
+                <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-2">
+                            <a href="index.html" class="nav-link">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="posts.html" class="nav-link">پستها</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="categories.html" class="nav-link">دسته ها</a>
+                        </li>
+                        <li class="nav-item px-2 active">
+                            <a href="users.html" class="nav-link">اعضا</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown">
+                            <a href="profile.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i> امین شهنانی
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="profile.html" class="dropdown-item">
+                                    <i class="fa fa-user-circle"></i> پروفایل
+                                </a>
+                                <a href="settings.html" class="dropdown-item">
+                                    <i class="fa fa-gear"></i> تنظیمات
+                                </a>
+                            </div>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li class="nav-item mr0-5">
+                            <a href="login.html" class="nav-link">
+                                <i class="fa fa-user-times"></i> خروج
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <header class="bg-warning text-white py-1" id="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>
+                            <i class="fa fa-pencil"></i> مدیریت کاربران
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- ACTION SECTION-->
+        <section class="bg-faded py-4 mb-4" id="user-actions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control vazir-font" placeholder="جستجوی کاربر...">
+                            <button class="border btn btn-warning vazir-font">جستجو</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- SECTION POST -->
+        <section id="users">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>کاربران</h4>
+                            </div>
+                            <table class="table table-striped">
+                                <thead class="thead thead-inverse">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>نام</th>
+                                        <th>نام خانوادگی</th>
+                                        <th>پست الکترونیکی</th>
+                                        <th>تاریخ ثبت نام</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>امین</td>
+                                        <td>شهنانی</td>
+                                        <td>am.shahnani@gmail.com</td>
+                                        <td>1397/05/10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>محمد</td>
+                                        <td>رضایی</td>
+                                        <td>mohammad@yahoo.com</td>
+                                        <td>1397/05/11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>آرمین</td>
+                                        <td>دهقان</td>
+                                        <td>armin.dehghan@outlook.com</td>
+                                        <td>1397/05/12</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="row">
+                            <nav class="mt-4 mx-auto">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">قبلی</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">بعدی</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-inverse text-white p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center">
+                            Copyright &copy; 2018 Control Panel
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/feather.min.js"></script>
+    </body>
+</html>
